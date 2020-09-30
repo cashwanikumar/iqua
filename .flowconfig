@@ -1,0 +1,15 @@
+[ignore]
+.*/build/.*
+.*/public/.*
+.*/.storybook/.*
+.*/.vscode/.*
+.*/stories/.*
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
