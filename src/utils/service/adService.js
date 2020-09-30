@@ -1,5 +1,5 @@
-const min = 2000
-const max = 7000
+const min = 1000
+const max = 5000
 
 const MOCK_INFO = {
 	'auto discount': {

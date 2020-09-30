@@ -6,9 +6,12 @@ export const modelProperties = state => state.getIn(['AppReducer', 'model', 'par
 export const filterBy = state => state.getIn(['AppReducer', 'filterBy'])
 
 export const propertiesCountByImportance = createSelector([modelProperties], property => {
-	const distinct = {}
+	const distinct = {
+	}
 	if (property.size > 0) {
+		distinct.all = 0
 		property.forEach(each => {
+			distinct.all += 1
 			if (distinct[each.get('importance')]) {
 				distinct[each.get('importance')] += 1
 			} else {
